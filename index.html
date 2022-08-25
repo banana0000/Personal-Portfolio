@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" alt="">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#porfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Webdesigner and System Administrator</p>
+            <h1>Hi, I 'm <span>Eszter</span><br>from Hungary</h1>
+        </div>
+
+    </div>
+
+
+    <!---------------------about------------------->
+    <div id="about">
+        <div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi iusto sapiente quisquam tempore
+                        numquam cum exercitationem! Nostrum natus quibusdam sed, voluptas ipsum molestiae blanditiis
+                        animi magnam fugit numquam velit quam!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links" active-link onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web</li>
+                            <li><span>Web development</span><br>Web</li>
+                            <li><span>App development</span><br>Building</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021</span><br>Designing Web/App interfaces</li>
+                            <li><span>2019- 2021</span><br>Web app development</li>
+                            <li><span>2016 2017</span><br>Building Androis/iOs apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Academy</li>
+                            <li><span>2021</span><br></li>
+                            <li><span>2000</span><br>School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------portfolio-------------->
+
+    <div id="portfolio">
+        <div class = "container">
+            <h1 class = "work-list">My work</h1>
+                <div class = "work-list">
+                    <div class = "work">
+                        <img src="images/pexels-designecologist-1970139.jpg" alt="">
+                        <div class="layer">
+                            <h3>App 1</h3>
+                            <p>This app ....</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/pexels-samer-daboul-1229456.jpg" alt="">
+                    <div class="layer">
+                        <h3>App 2</h3>
+                        <p>This app ....</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/pexels-lisa-fotios-1290515.jpg" alt="">
+                        <div class="layer">
+                            <h3>App 3</h3>
+                            <p>This app ....</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </h1>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
