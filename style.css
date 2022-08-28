@@ -12,15 +12,13 @@ html {
 body {
     background: #080808;
     color: #fff;
-
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),#2876dd), url(images/background.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #2876dd), url(images/background.jpeg);
     background-size: cover;
-
 
 }
 
@@ -35,6 +33,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .logo {
     width: 140px;
@@ -52,7 +51,6 @@ nav ul li a {
     font-size: 18px;
     position: relative;
 }
-
 
 nav ul li a::after {
     content: '';
@@ -72,6 +70,8 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    padding: 10px 10%;
+    ;
 }
 
 .header-text h1 {
@@ -127,7 +127,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background:#3399ff;
+    background: #3399ff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -144,7 +144,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color:#78b1ea;
+    color: #78b1ea;
     font-size: 14px;
 
 }
@@ -166,8 +166,8 @@ nav ul li a:hover::after {
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap:20px;
-    margin-top: 50px;
+    grid-gap: 30px;
+    margin-top: 30px;
 
 }
 
@@ -178,29 +178,29 @@ nav ul li a:hover::after {
 }
 
 .work img {
-    width:100%;
+    width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
 .layer {
-    width:100%;
-    height:0;
-    background: linear-gradient(rgba(0,0,0,0.6), #6761da);
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #6761da);
     border-radius: 10px;
-    position:absolute;
-    left:0;
-    bottom:0;
-    overflow:hidden;
-    display:flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size:14px;
-    transition:height 0.5s;
+    font-size: 14px;
+    transition: height 0.5s;
 }
 
 .layer h3 {
@@ -210,14 +210,14 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color:#6761da;
+    color: #6761da;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background:#fff;
+    background: #fff;
     height: 60px;
-    width:60px;
-    border-radius:50%;
+    width: 60px;
+    border-radius: 50%;
     text-align: center;
 }
 
@@ -226,23 +226,23 @@ nav ul li a:hover::after {
 }
 
 .work:hover .layer {
-    height:100%;
+    height: 100%;
 }
 
 .btn {
     display: block;
     margin: 50px auto;
-    width:fit-content;
+    width: fit-content;
     border: 1px solid #3399ff;
-    padding:14px 50px ;
+    padding: 14px 50px;
     border-radius: 30px;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     transition: background 0.5s;
 }
 
 .btn:hover {
-    background:#6761da;
+    background: #6761da;
 }
 
 /*----------------contact-------------*/
@@ -259,10 +259,10 @@ nav ul li a:hover::after {
 
 }
 
-.contact-left p i{
-    color:#3399ff;
+.contact-left p i {
+    color: #3399ff;
     margin-right: 15px;
-    font-size:25px;
+    font-size: 25px;
 
 }
 
@@ -281,7 +281,7 @@ nav ul li a:hover::after {
 
 .social-icons a:hover {
     color: #2876dd;
-    transform:translateY(-5px)
+    transform: translateY(-5px)
 }
 
 .btn.btn2 {
@@ -294,29 +294,29 @@ nav ul li a:hover::after {
 }
 
 form input, form textarea {
-    width:100%;
-    border:0;
-    outline:none;
-    background:#262626;
-    padding:15px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
     margin: 15px 0;
-    color:#fff;
+    color: #fff;
     font-size: 18px;
-    border-radius: 6px;  
+    border-radius: 6px;
 }
 
 form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
-    cursor:pointer;
+    cursor: pointer;
 
 }
 
 .copyright {
-    width:100%;
-    text-align:center;
-    padding:25px 0;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
@@ -324,47 +324,88 @@ form .btn2 {
 }
 
 .copyright i {
-    color:#3399ff;
+    color: #3399ff;
 }
 
 /*---------------------css for small screen------------*/
-nav.fas {
+
+nav .fas {
     display: none;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:768px) {
+
     /*#header {
         background:url(images/);
     }*/
     .header-text {
-        margin-top:100%;
-        font-size:16px; 
+        margin-top: 100%;
+        font-size: 16px;
     }
-    .header-text h1{
-        font-size:30px;
+
+    .header-text h1 {
+        font-size: 30px;
     }
-    nav.fas {
+
+    nav .fas {
         display: block;
-        font-size:25px;
+        font-size: 25px;
     }
-   nav ul {
-    background:#2876dd;
-    position: fixed;
-    top:0;
-    right:-200px;
-    width:200px;
-    height:100vh;
-    padding-top:50px;
-    z-index:2;
-   }
-   nav ul li {
-    display: block;
-    margin:25px;
-   }
-   nav ul .fas {
-    position:absolute;
-    top: 25px;
-    left:25px;
-    cursor: pointer;
+
+    nav ul {
+        background: #2876dd;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.2s;
     }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .about-col-1 .about-col-2 {
+        flex-basis: 100%;
+        font-size: 16px;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+#span{
+    color:#d3ec31;
+    margin-top: -40px;
+    display:block;
 }
