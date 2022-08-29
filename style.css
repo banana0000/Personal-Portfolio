@@ -85,7 +85,7 @@ nav ul li a:hover::after {
 
 /*------------------about-----------------*/
 #about {
-    padding: 80px 100px;
+    padding: 80px 10%;
     color: #ababab;
 }
 
@@ -95,11 +95,18 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
 }
 
+.about-col-1 {
+    flex-basis:35%;
+  }
+
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
 
+.about-col-2 p {
+    margin-top: 10px;
+}
 .about-col-2 {
     flex-basis: 60%;
 }
@@ -160,7 +167,7 @@ nav ul li a:hover::after {
 /*--------------porfolio-------------*/
 
 #portfolio {
-    padding: 50px 0;
+    padding: 10px 0;
 }
 
 .work-list {
@@ -246,6 +253,11 @@ nav ul li a:hover::after {
 }
 
 /*----------------contact-------------*/
+
+#contact {
+    margin-top: 80px;
+}
+
 .contact-left {
     flex-basis: 35%;
 }
@@ -380,6 +392,10 @@ nav .fas {
         font-size: 30px;
     }
 
+    #about {
+        padding: 30px 10%;
+    }
+
     .about-col-1 .about-col-2 {
         flex-basis: 100%;
         font-size: 16px;
@@ -404,8 +420,3 @@ nav .fas {
     }
 }
 
-#span{
-    color:#d3ec31;
-    margin-top: -40px;
-    display:block;
-}
